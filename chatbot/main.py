@@ -1,6 +1,6 @@
 import random
 import io
-import yaml_1
+import yaml
 
 user_template = "USER: {0}"
 bot_template = "BOT: {0}"
@@ -52,3 +52,7 @@ while True:
     else:
         send_message(message)
 
+with open("data/english/ai.yml", 'r') as stream:
+    data_loaded = yaml.load(stream)
+
+print(data_loaded["conversations"][0][1])
