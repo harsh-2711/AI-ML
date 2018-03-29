@@ -1,4 +1,6 @@
 import random
+import io
+import yaml_1
 
 user_template = "USER: {0}"
 bot_template = "BOT: {0}"
@@ -49,3 +51,4 @@ while True:
         break
     else:
         send_message(message)
+
